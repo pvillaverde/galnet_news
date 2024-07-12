@@ -52,7 +52,7 @@ Simple script to be run in a CronJob, check the newest article from Galnet News 
 
 - [ ] Add some unit tests.
 
-**[⬆️ Back to Top](#galnet_news)**
+**[⬆️ Back to Top](#galnet-news)**
 
 ## 🚀 Getting Started
 
@@ -140,7 +140,7 @@ docker run \
 
 You will need to have Deno installed in your machine and the environment variables setup, then you can just run `deno task main` to fetch the API and post to discord.
 
-**[⬆️ Back to Top](#galnet_news)**
+**[⬆️ Back to Top](#galnet-news)**
 
 <!-- CONTRIBUTING -->
 
@@ -166,7 +166,7 @@ If you want to add any missing feature or report a bug, you [can request ir or r
 
 - [NPM: Simple Discord WebHook](https://www.npmjs.com/package/simple-discord-webhooks)
 
-**[⬆️ Back to Top](#galnet_news)**
+**[⬆️ Back to Top](#galnet-news)**
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
