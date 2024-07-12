@@ -1,0 +1,23 @@
+repos:
+- repo: https://github.com/gitleaks/gitleaks
+  rev: v8.18.0
+  hooks:
+  - id: gitleaks
+- repo: https://github.com/nozaq/pre-commit-deno
+  rev: 0.1.0 # Use the ref you want to point at
+  hooks:
+  - id: deno-fmt
+  - id: deno-lint
+  - id: deno-test
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: detect-aws-credentials
+    args: ['--allow-missing-credentials']
+  - id: detect-private-key
+  - id: trailing-whitespace
+    args: [--markdown-linebreak-ext=md]
+    exclude: README.md
+  - id: check-added-large-files
+  - id: check-merge-conflict
+  - id: end-of-file-fixer

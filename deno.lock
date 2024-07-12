@@ -1,0 +1,31 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:simple-discord-webhooks": "npm:simple-discord-webhooks@2.1.0",
+      "npm:tslog": "npm:tslog@4.9.2"
+    },
+    "npm": {
+      "centra@2.5.0": {
+        "integrity": "sha512-CnSF1HD8vOOgNbE4P2fZEhdhfAohvpcF3DSdSvEcSHDAZvr+Xfw73isT8SXJJc3VMBqSwjXhr29/ikHUgFcypg==",
+        "dependencies": {}
+      },
+      "discord-api-types@0.37.86": {
+        "integrity": "sha512-ofpVLHshKdKl+XuZBbwOBSlgQFPJPzMuUiBpala3+ImPHBVo7ojZpzJUu2NJV/f0t1kqncechDugQpO5AjZnxg==",
+        "dependencies": {}
+      },
+      "simple-discord-webhooks@2.1.0": {
+        "integrity": "sha512-y6exHNKo6JivIGzZuEQlxFjlb9wX4tgjCDr6+cSFQRHYJYAzFF9KtcRR2R4mbF5Q1xdU417LXD7/ZCD4KRAOfQ==",
+        "dependencies": {
+          "centra": "centra@2.5.0",
+          "discord-api-types": "discord-api-types@0.37.86"
+        }
+      },
+      "tslog@4.9.2": {
+        "integrity": "sha512-wBM+LRJoNl34Bdu8mYEFxpvmOUedpNUwMNQB/NcuPIZKwdDde6xLHUev3bBjXQU7gdurX++X/YE7gLH8eXYsiQ==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {}
+}
