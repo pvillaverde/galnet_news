@@ -7,8 +7,8 @@ interface GalnetNew {
 }
 // Setup Variables
 const WEBHOOK_URL = new URL(Deno.env.get("WEBHOOK_URL") as string)
-const LANGUAGE = Deno.env.get("LANGUAGE") || "es-ES";
-const saveFile = Deno.env.get("SAVE_PATH") || "./last_record.txt";
+const LANGUAGE = Deno.env.get("LANGUAGE") || "en-GB";
+const saveFile = Deno.env.get("SAVE_PATH") || "/data/last_record.txt";
 const API_URL = `https://cms.zaonce.net/${LANGUAGE}/jsonapi/node/galnet_article?&sort=-published_at&page[offset]=0&page[limit]=1`
 
 const logger = new Logger({
