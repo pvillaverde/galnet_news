@@ -84,7 +84,6 @@ async function main() {
       if (latestNew && storedId !== latestNew.id) {
          logger.info(`ID has changed from ${storedId} to ${latestNew.id}. Updating...`);
          const webhook = new Webhook(WEBHOOK_URL);
-         logger.info(latestNew.message);
          const messageChunks = splitMessage(latestNew.message, {
             maxLength: 2000,
             prepend: '>>> ',
@@ -93,7 +92,7 @@ async function main() {
          messageChunks.forEach(async chunk => {
             await webhook.send(chunk);
          });
-         //await Deno.writeTextFile(saveFile, latestNew.id);
+         await Deno.writeTextFile(saveFile, latestNew.id);
       } else {
          logger.info(`ID has not changed. Current ID is ${storedId}.`);
       }
