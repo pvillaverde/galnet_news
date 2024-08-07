@@ -90,7 +90,7 @@ async function main() {
             char: '\n'
          });
          messageChunks.forEach(async chunk => {
-            await webhook.send(chunk);
+            return await webhook.send(chunk);
          });
          await Deno.writeTextFile(saveFile, latestNew.id);
       } else {
