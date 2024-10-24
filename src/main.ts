@@ -89,9 +89,10 @@ async function main() {
             prepend: '>>> ',
             char: '\n'
          });
-         messageChunks.forEach(async chunk => {
-            return await webhook.send(chunk);
-         });
+         // Use a for...of loop to ensure each chunk is sent sequentially
+         for (const chunk of messageChunks) {
+            await webhook.send(chunk);
+         }
          await Deno.writeTextFile(saveFile, latestNew.id);
       } else {
          logger.info(`ID has not changed. Current ID is ${storedId}.`);
